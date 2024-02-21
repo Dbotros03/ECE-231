@@ -1,0 +1,13 @@
+#Target := ece231_led_cl
+CC = gcc
+CFLAGS = -I.
+
+#SRC = $(wildcard $(SRC_DIR)/*.c)
+
+#begin: $(TARGET).elf
+
+#$(TARGET).elf: $(SRC)
+#		$(CC) -o $(BIN_DIR)/$(TARGET).elf $(SRC)
+
+ece_231_led_cl: ece_231_led_cl.o
+	$(CC) -o ece_231_led_cl ece_231_led_cl.o
